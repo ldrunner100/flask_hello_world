@@ -27,7 +27,7 @@ def hello_person(name):
     
 @app.route("/hello/<fname>/<lname>")
 def jedi_name(fname, lname):
-    jd_nm = lname[0:2] + fname[0:1]
+    jd_nm = lname[0:3] + fname[0:2]
     html = """
     <h1>
         Hello {} {}!
